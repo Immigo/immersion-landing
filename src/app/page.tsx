@@ -75,8 +75,8 @@ function BentoSection() {
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
         <BentoCard
           eyebrow="Insight"
-          title="Get perfect clarity"
-          description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
+          title="Book a session"
+          description="Pick a session that fits what you are looking for."
           graphic={
             <div className="h-80 bg-[url('https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/67356422e4922c58f5ca5b0a_Screen%20Shot%202024-11-13%20at%206.35.06%20PM-p-500.png')] bg-[size:412px_290px] bg-[left_100px_top_10px] bg-no-repeat" />
           }
@@ -85,8 +85,8 @@ function BentoSection() {
         />
         <BentoCard
           eyebrow="Analysis"
-          title="Undercut your competitors"
-          description="With our advanced data mining, you’ll know which companies your leads are talking to and exactly how much they’re being charged."
+          title="Show up"
+          description="Our classes are live, around 5 to 15 people, 50 minutes long. Our sessions are designed to simulate real life situations that happen in English speaking countrieslike the United States and Canada."
           graphic={
             <div className="absolute inset-0 bg-[url('https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6735642242140efe2cb6fc08_Screen%20Shot%202024-11-13%20at%206.41.32%20PM-p-500.png')] bg-[size:500px_227px] bg-[left_60px_top_60px] bg-no-repeat" />
           }
@@ -95,27 +95,32 @@ function BentoSection() {
         />
         <BentoCard
           eyebrow="Speed"
-          title="Built for power users"
-          description="It’s never been faster to cold email your entire contact list using our streamlined keyboard shortcuts."
+          title="First part of the session: Lesson"
+          description="First 15 minutes, an experienced native speaker coach will give you a lesson, comprised of different expressions that you will practiceusing in the discussion."
           graphic={
-            <div className="flex size-full pl-10 pt-10">
-              <Keyboard highlighted={['LeftCommand', 'LeftShift', 'D']} />
-            </div>
+            <video className='absolute h-80 left-14' muted loop autoPlay src='https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce6130d_In-class-transcode.mp4'  />
           }
+          fade={['bottom']}
           className="lg:col-span-2 lg:rounded-bl-4xl"
         />
         <BentoCard
           eyebrow="Source"
-          title="Get the furthest reach"
-          description="Bypass those inconvenient privacy laws to source leads from the most unexpected places."
-          graphic={<LogoCluster />}
+          title="Second part of the session: Immersion"
+          description="The rest of 35 minutes are dedicated to you practicing what you just learned with 2 to 3 other people. These are different scenarios and discussion questions based on real life situations."
+          graphic={
+            <video className='absolute h-80 ' muted loop autoPlay src='https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/673564a0667e1e064f33bedb_webdemo-chat-transcode.mp4'  />
+          }
+          fade={['bottom']}
           className="lg:col-span-2"
         />
         <BentoCard
           eyebrow="Limitless"
-          title="Sell globally"
-          description="Radiant helps you sell in locations currently under international embargo."
-          graphic={<Map />}
+          title="Check your feedback"
+          description="After the class, you will get a feedback report on what you can do differently in your next class!"
+          graphic={
+            <video className='absolute h-80 left-16' muted loop autoPlay src='https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce6130c_Post-class_vF-transcode.mp4'  />
+          }
+          fade={['bottom']}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"
         />
       </div>
