@@ -5,6 +5,6 @@ export const MainButton = (props : {
 }) => {
     const {onClick} = props;
     return (
-        <button onClick={() => onClick()} className="bg-green-500 px-4 py-2 rounded-lg text-2xl text-white font-medium hover:bg-green-600">START</button>
+        <button onClick={() => onClick()} className="font-mono bg-green-500 px-4 py-2 rounded-lg text-md text-white font-medium hover:bg-green-600">START</button>
     )
 }

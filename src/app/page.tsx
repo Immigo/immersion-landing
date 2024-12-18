@@ -28,12 +28,17 @@ function Hero() {
     <div className="relative">      {/* // <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
       <Container className="relative">
 
-      <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:pb-48 md:pt-32 flex flex-col justify-center items-center text-center text-white">
-      <video autoPlay className='absolute h-full w-screen object-cover' muted loop src="https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion.mov?alt=media&token=cfa249ac-154e-4d22-9176-87f2a92035dc" />
-      <div className="relative border-4 rounded-xl border-green-500 py-48 px-96">
-        <h1 className="text-8xl font-bold mb-4">Immigo</h1>
-        <h1 className="text-2xl font-bold mb-4">Virtual study abroad</h1>
-        <div className="flex space-x-4 justify-center">
+      <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:py-48 flex flex-col justify-center items-center text-center text-white">
+      <video autoPlay className='absolute h-full md:w-screen object-cover md:object-center object-left-bottom object-cover ' muted loop src="https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion.mov?alt=media&token=cfa249ac-154e-4d22-9176-87f2a92035dc" />
+      <div className="relative border-4 rounded-xl border-green-500 py-28 md:px-64 px-6">
+        <img className='w-64 mx-auto' src='https://cdn.prod.website-files.com/644c0ecc4a055c564b922d0b/645529068ac0540fd0b83c49_Immigo%20White%20Logo.svg' />
+        <div className='md:text-6xl text-5xl mt-12'>
+          Learn English by Living
+        </div>
+        <Subheading as='h6' className='mt-12'>
+          Start your journey in the US virtually today.
+        </Subheading>
+        <div className="flex space-x-4 justify-center mt-12">
           <HeroButtons />
         </div>
       </div>
@@ -48,13 +53,11 @@ function FeatureSection() {
     <div className="overflow-hidden">
       <Container className="pb-24">
         <Heading as="h2" className="max-w-3xl">
-          A snapshot of your entire sales pipeline.
+          Immigo is the new way of learning English through immersion.
         </Heading>
-        <Screenshot
-          width={1216}
-          height={768}
-          src="/screenshots/app.png"
-          className="mt-16 h-[36rem] sm:h-auto sm:w-[76rem]"
+        <img 
+        className="mt-16 h-[36rem] sm:h-auto sm:w-[82rem] object-contain rounded-md"
+          src='https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion%2Fcompetitive-bw.png?alt=media&token=ab0de61f-24e0-4291-b3f9-3c6184ec0b99' 
         />
       </Container>
     </div>
@@ -75,7 +78,7 @@ function BentoSection() {
           title="Get perfect clarity"
           description="Radiant uses social engineering to build a detailed financial picture of your leads. Know their budget, compensation package, social security number, and more."
           graphic={
-            <div className="h-80 bg-[url(/screenshots/profile.png)] bg-[size:1000px_560px] bg-[left_-109px_top_-112px] bg-no-repeat" />
+            <div className="h-80 bg-[url('https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/67356422e4922c58f5ca5b0a_Screen%20Shot%202024-11-13%20at%206.35.06%20PM-p-500.png')] bg-[size:412px_290px] bg-[left_100px_top_10px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -85,7 +88,7 @@ function BentoSection() {
           title="Undercut your competitors"
           description="With our advanced data mining, you’ll know which companies your leads are talking to and exactly how much they’re being charged."
           graphic={
-            <div className="absolute inset-0 bg-[url(/screenshots/competitors.png)] bg-[size:1100px_650px] bg-[left_-38px_top_-73px] bg-no-repeat" />
+            <div className="absolute inset-0 bg-[url('https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6735642242140efe2cb6fc08_Screen%20Shot%202024-11-13%20at%206.41.32%20PM-p-500.png')] bg-[size:500px_227px] bg-[left_60px_top_60px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
@@ -184,11 +187,11 @@ export default function Home() {
         <Container className="mt-10">
           <LogoCloud />
         </Container>
-        {/* <div className="bg-gradient-to-b from-black from-50% to-gray-100 py-32">
+        <div className="bg-gradient-to-b from-black from-50% to-black py-32">
           <FeatureSection />
           <BentoSection />
         </div>
-        <DarkBentoSection /> */}
+        {/* <DarkBentoSection /> */}
         <Testimonials />
       </main>
     </div>

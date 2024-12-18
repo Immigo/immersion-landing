@@ -1,40 +1,52 @@
 import { clsx } from 'clsx'
+import { Subheading } from './text'
+
 
 export function LogoCloud({
   className,
 }: React.ComponentPropsWithoutRef<'div'>) {
   return (
+    <div className='flex flex-col'>
+      <div className='mx-auto mt-2 mb-12'>
+        <Subheading >
+          Our travelers work at
+        </Subheading>
+      </div>
+
     <div
       className={clsx(
         className,
         'flex justify-between max-sm:mx-auto max-sm:max-w-md max-sm:flex-wrap max-sm:justify-evenly max-sm:gap-x-4 max-sm:gap-y-4',
       )}
     >
+
       <img
         alt="SavvyCal"
-        src="https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce61302_Google_2015_logo.svg"
+        src='/images/Google_2015_logo.png'
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Laravel"
-        src="https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce61303_Endava_d.o.o._logo.png"
+        src="/images/Endava_d.o.o._logo.png"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Tuple"
-        src="https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce61304_Deloitte.svg"
+        src={'/images/Deloitte.png'}
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Transistor"
-        src="https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce61307_PwC-Symbol.png"
+        src={'/images/PwC-Symbol.png'}
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Statamic"
-        src="https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce61305_Logo_de_Banamex.svg"
+        src={'/images/Logo_de_Banamex.png'}
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
     </div>
+    </div>
+
   )
 }

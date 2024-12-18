@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         {/* Main Content */}
         <main className="container mx-auto p-4 text-center">
           <div className="grid grid-cols-3">
-          <div className="text-pink-500 md:text-6xl text-3xl font-bold h-full items-center flex px-24 md:text-left md:col-span-1 col-span-3">
+          <div className="text-pink-500 md:text-6xl text-3xl font-bold h-full flex md:px-24 md:text-left md:col-span-1 col-span-3 col-span-3 flex justify-center items-center">
           CHOOSE YOUR JOURNEY
           </div>
           <div className="grid grid-cols-1 gap-8 md:mt-12 mt-6 md:col-span-2 col-span-3">
