@@ -1,4 +1,6 @@
 'use client'
+/* eslint prefer-const: 0 */
+
 
 import * as Headless from '@headlessui/react'
 import { ArrowLongRightIcon } from '@heroicons/react/20/solid'

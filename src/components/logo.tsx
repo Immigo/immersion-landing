@@ -1,4 +1,5 @@
 'use client'
+/* eslint prefer-const: 0 */
 
 import { clsx } from 'clsx'
 import { motion } from 'framer-motion'

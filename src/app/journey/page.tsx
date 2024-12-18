@@ -1,8 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { ArrowRightIcon } from "@heroicons/react/16/solid";
 import { JourneyButton } from "@/components/buttons/journeyButton";
-import { Navbar } from "@/components/navbar";
 import { NavBarSimple } from "@/components/navbar_simple";
 
 const Home: React.FC = () => {

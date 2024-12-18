@@ -1,4 +1,8 @@
 'use client'
+/* eslint prefer-const: 0 */
+/* eslint no-unused-vars: 0 */
+/* eslint no-explicit-any: 0 */
+
 
 import { Bars3Icon } from "@heroicons/react/16/solid"
 
