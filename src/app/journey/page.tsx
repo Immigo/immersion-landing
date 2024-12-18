@@ -2,10 +2,13 @@ import React from "react";
 import Head from "next/head";
 import { ArrowRightIcon } from "@heroicons/react/16/solid";
 import { JourneyButton } from "@/components/buttons/journeyButton";
+import { Navbar } from "@/components/navbar";
+import { NavBarSimple } from "@/components/navbar_simple";
 
 const Home: React.FC = () => {
   return (
     <>
+      <NavBarSimple />
       <Head>
         <title>Immigo: Choose Your Journey</title>
         <meta name="description" content="Level up your English skills with Immigo's 8-bit adventure." />
@@ -17,7 +20,6 @@ const Home: React.FC = () => {
           <div className="grid grid-cols-3">
 
           <div className="font-press-start-2p text-pink-500 md:text-6xl text-3xl h-full flex md:px-24 md:text-left md:col-span-1 col-span-3 col-span-3 flex justify-center items-center flex-col">
-            <img className='w-64 mx-auto mb-24' src='https://cdn.prod.website-files.com/644c0ecc4a055c564b922d0b/645529068ac0540fd0b83c49_Immigo%20White%20Logo.svg' />
             <span>CHOOSE YOUR JOURNEY</span>
           </div>
           <div className="grid grid-cols-1 gap-8 md:mt-12 mt-6 md:col-span-2 col-span-3">

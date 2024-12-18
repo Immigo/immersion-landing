@@ -13,6 +13,7 @@ import { LogoCluster } from '@/components/logo-cluster'
 import { LogoTimeline } from '@/components/logo-timeline'
 import { Map } from '@/components/map'
 import { Navbar } from '@/components/navbar'
+import { NavBarSimple } from '@/components/navbar_simple'
 import { Screenshot } from '@/components/screenshot'
 import { Testimonials } from '@/components/testimonials_io'
 import { Heading, Subheading } from '@/components/text'
@@ -25,7 +26,7 @@ export const metadata: Metadata = {
 
 function Hero() {
   return (
-    <div className="relative">      {/* // <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
+    <div className="relative pt-8">      {/* // <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
       <Container className="relative">
 
       <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:py-48 flex flex-col justify-center items-center text-center text-white">
@@ -186,7 +187,7 @@ function DarkBentoSection() {
 export default function Home() {
   return (
     <div className="overflow-hidden">
-      
+      <NavBarSimple />
       <Hero />
       <main>
         <Container className="mt-10">
