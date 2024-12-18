@@ -32,7 +32,7 @@ function Hero() {
       <video autoPlay className='absolute h-full md:w-screen object-cover md:object-center object-left-bottom object-cover ' muted loop src="https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion.mov?alt=media&token=cfa249ac-154e-4d22-9176-87f2a92035dc" />
       <div className="relative border-4 rounded-xl border-green-500 py-28 md:px-64 px-6">
         <img className='w-64 mx-auto' src='https://cdn.prod.website-files.com/644c0ecc4a055c564b922d0b/645529068ac0540fd0b83c49_Immigo%20White%20Logo.svg' />
-        <div className='md:text-6xl text-5xl mt-12'>
+        <div className='md:text-2xl text-5xl mt-12 font-press-start-2p'>
           Learn English by Living
         </div>
         <Subheading as='h6' className='mt-12'>
@@ -56,7 +56,7 @@ function FeatureSection() {
           Immigo is the new way of learning English through immersion.
         </Heading>
         <img 
-        className="mt-16 h-[36rem] sm:h-auto sm:w-[82rem] object-contain rounded-md"
+        className="mt-12 md:mt-16 h-[12rem] sm:h-auto sm:w-[82rem] object-contain rounded-md"
           src='https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion%2Fcompetitive-bw.png?alt=media&token=ab0de61f-24e0-4291-b3f9-3c6184ec0b99' 
         />
       </Container>
@@ -67,9 +67,9 @@ function FeatureSection() {
 function BentoSection() {
   return (
     <Container>
-      <Subheading>Sales</Subheading>
+      <Subheading>Process</Subheading>
       <Heading as="h3" className="mt-2 max-w-3xl">
-        Know more about your customers than they do.
+        How Immigo works
       </Heading>
 
       <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">

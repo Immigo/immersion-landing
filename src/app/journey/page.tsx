@@ -15,8 +15,10 @@ const Home: React.FC = () => {
         {/* Main Content */}
         <main className="container mx-auto p-4 text-center">
           <div className="grid grid-cols-3">
-          <div className="text-pink-500 md:text-6xl text-3xl font-bold h-full flex md:px-24 md:text-left md:col-span-1 col-span-3 col-span-3 flex justify-center items-center">
-          CHOOSE YOUR JOURNEY
+
+          <div className="font-press-start-2p text-pink-500 md:text-6xl text-3xl h-full flex md:px-24 md:text-left md:col-span-1 col-span-3 col-span-3 flex justify-center items-center flex-col">
+            <img className='w-64 mx-auto mb-24' src='https://cdn.prod.website-files.com/644c0ecc4a055c564b922d0b/645529068ac0540fd0b83c49_Immigo%20White%20Logo.svg' />
+            <span>CHOOSE YOUR JOURNEY</span>
           </div>
           <div className="grid grid-cols-1 gap-8 md:mt-12 mt-6 md:col-span-2 col-span-3">
             <JourneyButton redirectUrl={'https://app.immigo.io/pricing'} title="SAN FRANCISCO" description="Look for a job in San Franscisco" imageUrl="https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion%2Fsf.jpg?alt=media&token=edc5f0c5-dca5-4bc7-8d3b-f2828a78e65b" />
