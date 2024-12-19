@@ -10,6 +10,7 @@ import { NavBarSimple } from '@/components/navbar_simple'
 import { Testimonials } from '@/components/testimonials_io'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
+import { HomeAnalytics } from './analytics/homeAnalytics'
 
 export const metadata: Metadata = {
   description:
@@ -179,6 +180,7 @@ function DarkBentoSection() {
 export default function Home() {
   return (
     <div className="overflow-hidden">
+      <HomeAnalytics />
       <NavBarSimple />
       <Hero />
       <main>
