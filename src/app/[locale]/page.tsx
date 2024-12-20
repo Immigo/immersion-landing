@@ -10,7 +10,8 @@ import { NavBarSimple } from '@/components/navbar_simple'
 import { Testimonials } from '@/components/testimonials_io'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
-import { HomeAnalytics } from './analytics/homeAnalytics'
+import { HomeAnalytics } from '../analytics/homeAnalytics'
+import { useTranslations } from 'next-intl'
 
 export const metadata: Metadata = {
   description:
@@ -18,6 +19,8 @@ export const metadata: Metadata = {
 }
 
 function Hero() {
+  const t = useTranslations('Home'); 
+
   return (
     <div className="relative pt-8">      {/* // <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
       <Container className="relative">
@@ -27,10 +30,10 @@ function Hero() {
       <div className="relative border-4 rounded-xl border-green-500 py-28 md:px-64 px-6">
         <img className='w-64 mx-auto' src='https://cdn.prod.website-files.com/644c0ecc4a055c564b922d0b/645529068ac0540fd0b83c49_Immigo%20White%20Logo.svg' />
         <div className='md:text-2xl text-5xl mt-12 font-press-start-2p'>
-          Learn English by Living
+          {t('learnEnglishByLiving')}
         </div>
         <Subheading as='h6' className='mt-12'>
-          Start your journey in the US virtually today.
+          {t('startYourJourney')}
         </Subheading>
         <div className="flex space-x-4 justify-center mt-12">
           <HeroButtons />
@@ -43,11 +46,13 @@ function Hero() {
 }
 
 function FeatureSection() {
+  const t = useTranslations('Home'); 
+
   return (
     <div className="overflow-hidden">
       <Container className="pb-24">
         <Heading as="h2" className="max-w-3xl">
-          Immigo is the new way of learning English through immersion.
+          {t('newWayOfLearningEnglish')}
         </Heading>
         <img 
         className="mt-12 md:mt-16 h-[12rem] sm:h-auto sm:w-[82rem] object-contain rounded-md"
@@ -178,6 +183,8 @@ function DarkBentoSection() {
 }
 
 export default function Home() {
+  const t = useTranslations('Home'); 
+
   return (
     <div className="overflow-hidden">
       <HomeAnalytics />
