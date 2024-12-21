@@ -21,5 +21,12 @@
 
         "whatEveryoneIsSaying" : "What everyone is saying",
         "trustedByProfessionals" : "Trusted by professionals."
+    },
+
+    "Journey" : {
+        "chooseYourJourney" : "CHOOSE YOUR JOURNEY",
+        "lookForAJob" : "Look for a job in San Francisco.",
+        "goOnADate" :  "Go on a date in Los Angeles.",
+        "orderACoffee" : "Order a coffe in New York."
     }
 }

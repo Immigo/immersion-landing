@@ -20,5 +20,12 @@
 
         "whatEveryoneIsSaying" : "Lo que todos están diciendo",
         "trustedByProfessionals" : "Contamos con la confianza de profesionales."
+    },
+
+    "Journey" : {
+        "chooseYourJourney" : "ESCOGE TU VIAJE",
+        "lookForAJob" : "Busca un trabajo en San Francisco.",
+        "goOnADate" :  "Salir a una cita en Los Ángeles.",
+        "orderACoffee" : "Ordenar un café en New York."
     }
 }
