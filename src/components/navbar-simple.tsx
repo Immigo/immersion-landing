@@ -5,6 +5,7 @@
 
 
 import { Bars3Icon } from "@heroicons/react/16/solid"
+import LocalSwitcher from "./forms/local-switcher"
 
 const navigation : any[]= []
 
@@ -41,7 +42,11 @@ export const NavBarSimple = (props : {
               </a>
             ))}
           </div>
+
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+            <div className="mr-6">
+              <LocalSwitcher />
+            </div>
             <a href="https://app.immigo.io/login" target="blank" className="text-sm/6 font-semibold text-white">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>

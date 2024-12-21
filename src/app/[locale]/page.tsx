@@ -6,7 +6,7 @@ import { HeroButtons } from '@/components/hero-buttons'
 import { LinkedAvatars } from '@/components/linked-avatars'
 import { LogoCloud } from '@/components/logo-cloud'
 import { LogoTimeline } from '@/components/logo-timeline'
-import { NavBarSimple } from '@/components/navbar_simple'
+import { NavBarSimple } from '@/components/navbar-simple'
 import { Testimonials } from '@/components/testimonials_io'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
@@ -36,7 +36,7 @@ function Hero() {
           {t('startYourJourney')}
         </Subheading>
         <div className="flex space-x-4 justify-center mt-12">
-          <HeroButtons />
+          <HeroButtons mainButtonText={t('start')} />
         </div>
       </div>
       </div>

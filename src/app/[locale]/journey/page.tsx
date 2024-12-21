@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import { JourneyButton } from "@/components/buttons/journeyButton";
-import { NavBarSimple } from "@/components/navbar_simple";
+import { NavBarSimple } from "@/components/navbar-simple";
 
 const Home: React.FC = () => {
   return (
