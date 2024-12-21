@@ -10,8 +10,9 @@ import { NavBarSimple } from '@/components/navbar-simple'
 import { Testimonials } from '@/components/testimonials_io'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
-import { HomeAnalytics } from '../analytics/homeAnalytics'
+import { HomeAnalytics } from '../../components/analytics/homeAnalytics'
 import { useTranslations } from 'next-intl'
+import { ParamSaver } from '@/components/script/param-saver'
 
 export const metadata: Metadata = {
   description:
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
 }
 
 function Hero() {
-  const t = useTranslations('Home'); 
+  const t = useTranslations('Home');
 
   return (
     <div className="relative pt-8">      {/* // <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
@@ -183,10 +184,9 @@ function DarkBentoSection() {
 }
 
 export default function Home() {
-  const t = useTranslations('Home'); 
-
   return (
     <div className="overflow-hidden">
+      <ParamSaver />
       <HomeAnalytics />
       <NavBarSimple />
       <Hero />

@@ -24,7 +24,7 @@ export default function SimpleDropDown(props : {
       >
         {
             options.map((option) => {
-                return <div className="py-1">
+                return <div className="py-1" key={option}>
                 <MenuItem>
                   <span
                     onClick={() => {

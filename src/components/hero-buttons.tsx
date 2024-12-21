@@ -1,6 +1,6 @@
 'use client'
 
-import { trackHomePageEvent } from "@/app/analytics/analytics"
+import { trackHomePageEvent } from "@/components/analytics/analytics"
 import { MainButton } from "./buttons/mainButton"
 import { useLocale } from "next-intl"
 
