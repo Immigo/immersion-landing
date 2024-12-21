@@ -9,7 +9,7 @@ export const ParamSaver = (props : {
 
     useEffect(() =>  {
         const urlParams = new URLSearchParams(window.location.search);
-        const rewardfulVia =  (urlParams.get('via') ?? window.localStorage.getItem('via')) ?? undefined;
+        const rewardfulVia =  (urlParams.get('via') ?? window.localStorage.getItem('via')) ?? 'immigo-star';
         const testGroupToken =  urlParams.get('group') ?? window.localStorage.getItem('test_group');
         if(testGroupToken) {
             window.localStorage.setItem('test_group', testGroupToken);
