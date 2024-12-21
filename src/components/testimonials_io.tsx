@@ -6,6 +6,7 @@ import { useRef } from 'react'
 import { Container } from './container'
 import { Heading, Subheading } from './text'
 import { useTranslations } from 'next-intl'
+import Script from 'next/script'
 
 export function Testimonials(props : {
   subText : string,
@@ -36,7 +37,8 @@ export function Testimonials(props : {
       >
       <script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
     <iframe id='testimonialto-carousel-immigo-tag-all-light' src="https://embed-v2.testimonial.to/carousel/all/immigo?theme=light&autoplay=off&showmore=off&one-row=on&same-height=off&tag=all&arrowColor=9BA9B4&column-scale=0" scrolling="no" width="100%"></iframe>
-    <script type="text/javascript" dangerouslySetInnerHTML={{__html : `iFrameResize({log: false, checkOrigin: false}, '#testimonialto-carousel-immigo-tag-all-light');`}}></script>      {/* <Footer /> */}
+    <Script>{`iFrameResize({log: false, checkOrigin: false}, '#testimonialto-carousel-immigo-tag-all-light');`}</Script>
+
 
         <div className="w-[42rem] shrink-0 sm:w-[54rem]" />
       </div>

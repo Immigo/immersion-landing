@@ -1,4 +1,4 @@
-import mixpanel from '../../../util/mixpanel';
+import { Mixpanel } from '../../../util/mixpanel';
 
 type JourneyPageEvent = 
 'V2: Visited journey page' |
@@ -15,5 +15,5 @@ interface JourneyPageEventPayload {
 }
 
 export function trackJourneyPageEvent(event : JourneyPageEvent, payload ? : JourneyPageEventPayload) {
-    mixpanel.track(event, payload);
+    Mixpanel.track(event, payload);
 }

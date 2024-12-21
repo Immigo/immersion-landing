@@ -1,4 +1,4 @@
-import mixpanel from '../../../util/mixpanel';
+import { Mixpanel } from "@/util/mixpanel"
 
 type HomePageEvent = 
 'V2: Main landing page visited' |
@@ -13,5 +13,6 @@ interface HomePageEventPayload {
 }
 
 export function trackHomePageEvent(event : HomePageEvent, payload ? : HomePageEventPayload) {
-    mixpanel.track(event, payload);
+    console.log(Mixpanel)
+    Mixpanel.track(event, payload);
 }
