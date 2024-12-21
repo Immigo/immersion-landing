@@ -80,7 +80,7 @@ function BentoSection() {
           title={t('howImmigoWorks')}
           description={t('pickASession')}
           graphic={
-            <div className="h-80 bg-[url('https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/67356422e4922c58f5ca5b0a_Screen%20Shot%202024-11-13%20at%206.35.06%20PM-p-500.png')] bg-[size:412px_290px] bg-[left_100px_top_10px] bg-no-repeat" />
+            <div className="h-80 md:w-auto bg-[url('https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/67356422e4922c58f5ca5b0a_Screen%20Shot%202024-11-13%20at%206.35.06%20PM-p-500.png')] bg-[size:412px_290px] md:bg-[left_100px_top_10px] bg-[left_0px_top_10px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="max-lg:rounded-t-4xl lg:col-span-3 lg:rounded-tl-4xl"
@@ -90,7 +90,7 @@ function BentoSection() {
           title={t('showUp')}
           description={t('ourClassesAreLive')}
           graphic={
-            <div className="absolute inset-0 bg-[url('https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6735642242140efe2cb6fc08_Screen%20Shot%202024-11-13%20at%206.41.32%20PM-p-500.png')] bg-[size:500px_227px] bg-[left_60px_top_60px] bg-no-repeat" />
+            <div className="absolute inset-0 bg-[url('https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6735642242140efe2cb6fc08_Screen%20Shot%202024-11-13%20at%206.41.32%20PM-p-500.png')] bg-[size:500px_227px] md:bg-[left_60px_top_60px] bg-[left_0px_top_60px] bg-no-repeat" />
           }
           fade={['bottom']}
           className="lg:col-span-3 lg:rounded-tr-4xl"
@@ -100,7 +100,7 @@ function BentoSection() {
           title={t('firstPartSession')}
           description={t('first15Minutes')}
           graphic={
-            <video className='absolute h-80 left-14' muted loop autoPlay src='https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce6130d_In-class-transcode.mp4'  />
+            <video className='absolute h-80 md:left-14 left-4' muted loop autoPlay src='https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce6130d_In-class-transcode.mp4'  />
           }
           fade={['bottom']}
           className="lg:col-span-2 lg:rounded-bl-4xl"

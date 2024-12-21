@@ -17,7 +17,7 @@ const Home: React.FC = () => {
         <meta name="description" content="Level up your English skills with Immigo's 8-bit adventure." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="min-h-screen text-white font-mono">
+      <div className="min-h-screen text-white font-mono md:mt-0 mt-24">
         {/* Main Content */}
         <main className="container mx-auto p-4 text-center">
           <div className="grid grid-cols-3">

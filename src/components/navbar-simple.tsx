@@ -3,8 +3,6 @@
 /* eslint no-unused-vars: 0 */
 /* eslint no-explicit-any: 0 */
 
-
-import { Bars3Icon } from "@heroicons/react/16/solid"
 import LocalSwitcher from "./forms/local-switcher"
 
 const navigation : any[]= []
@@ -26,14 +24,20 @@ export const NavBarSimple = (props : {
             </a>
           </div>
           <div className="flex lg:hidden">
-            <button
+            {/* <button
               type="button"
               onClick={() => {}}
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="size-6" />
-            </button>
+            </button> */}
+            <div className="mr-6">
+              <LocalSwitcher />
+            </div>
+            <a href="https://app.immigo.io/login" target="blank" className="text-sm/6 font-semibold text-white">
+              Log in <span aria-hidden="true">&rarr;</span>
+            </a>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
