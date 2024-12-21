@@ -5,18 +5,23 @@ import { clsx } from 'clsx'
 import { useRef } from 'react'
 import { Container } from './container'
 import { Heading, Subheading } from './text'
+import { useTranslations } from 'next-intl'
 
-export function Testimonials() {
+export function Testimonials(props : {
+  subText : string,
+  mainText : string
+}) {
   const scrollRef = useRef<HTMLDivElement | null>(null)
 
+  const {subText, mainText} = props;
 
   return (
     <div className="overflow-hidden py-32">
       <Container>
         <div>
-          <Subheading>What everyone is saying</Subheading>
+          <Subheading>{subText}</Subheading>
           <Heading as="h3" className="mt-2">
-            Trusted by professionals.
+            {mainText}
           </Heading>
         </div>
       </Container>

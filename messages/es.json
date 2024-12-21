@@ -1,8 +1,24 @@
 {
     "Home" : {
-        "learnEnglishByLiving" : "Hola",
-        "startYourJourney" : "Start your journey in the US virtually today.",
-        "newWayOfLearningEnglish" : "Immigo is the new way of learning English through immersion.",
-        "start" : "EMPIEZA"
+        "learnEnglishByLiving" : "Aprende Inglés Viviendo",
+        "startYourJourney" : "Comienza hoy tu viaje en Estados Unidos virtualmente.",
+        "newWayOfLearningEnglish" : "Immigo es la nueva forma de aprender inglés a través de inmersión.",
+        "start" : "COMENZAR",
+
+        "process" : "proceso",
+        "howImmigoWorks" : "Cómo funciona Immigo",
+        "bookASession" : "Reserva una sesión",
+        "pickASession" : "Escoge una sesión que se adapte a lo que buscas.",
+        "showUp" : "Participa",
+        "ourClassesAreLive" : "Nuestras clases son en vivo, en grupos de 5 a 15 personas y duran 50 minutos. Nuestras sesiones están diseñadas para simular situaciones de la vida real que suceden en países donde se habla inglés como Estados Unidos y Canadá.",
+        "firstPartSession" : "Primera parte de la sesión: Lección",
+        "first15Minutes" : "Los primeros 15 minutos un profesor nativo experimentado te dará una lección con diferentes expresiones que practicarás con otros compañeros.",
+        "secondPartSession": "Segunda parte de la sesión: Inmersión",
+        "theRest35Minutes" : "El resto de 35 minutos está dedicado a practicar lo que aprendiste junto a 2 o 3 estudiantes. Estos son diferentes escenarios y discusiones de preguntas basados en situaciones de la vida real.",
+        "checkYourFeedback" : "Revisa tu retroalimentación",
+        "afterTheSession" : "Después de cada sesión, recibirás un reporte de retroalimentación de nuestra IA con lo que puedes hacer diferente en la próxima sesión.",
+
+        "whatEveryoneIsSaying" : "Lo que todos están diciendo",
+        "trustedByProfessionals" : "Contamos con la confianza de profesionales."
     }
 }

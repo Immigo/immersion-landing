@@ -3,6 +3,23 @@
         "learnEnglishByLiving" : "Learn English by Living",
         "startYourJourney" : "Start your journey in the US virtually today.",
         "newWayOfLearningEnglish" : "Immigo is the new way of learning English through immersion.",
-        "start" : "START"
+        "start" : "START",
+
+
+        "process" : "process",
+        "howImmigoWorks" : "How Immigo works",
+        "bookASession" : "Book a session",
+        "pickASession" : "Pick a session that fits what you are looking for.",
+        "showUp" : "Show up",
+        "ourClassesAreLive" : "Our sessions are live, around 5 to 15 people, 50 minutes long. Our sessions are designed to simulate real life situations that happen in English speaking countrieslike the United States and Canada.",
+        "firstPartSession" : "First part of the session: Lesson",
+        "first15Minutes" : "First 15 minutes, an experienced native speaker coach will give you a lesson, comprised of different expressions that you will practiceusing in the discussion.",
+        "secondPartSession": "Second part of the session: Immersion",
+        "theRest35Minutes" : "The rest of 35 minutes are dedicated to you practicing what you just learned with 2 to 3 other people. These are different scenarios and discussion questions based on real life situations.",
+        "checkYourFeedback" : "Check your feedback",
+        "afterTheSession" : "After the session, you will get a feedback report on what you can do differently in your next session!",
+
+        "whatEveryoneIsSaying" : "What everyone is saying",
+        "trustedByProfessionals" : "Trusted by professionals."
     }
 }
