@@ -5,7 +5,7 @@ import { trackHomePageEvent } from "./analytics"
 
 export const HomeAnalytics = () => {
     useEffect(() => {
-        trackHomePageEvent('V2: Clicked start button on the jumbotron', {
+        trackHomePageEvent('V2: Main landing page visited', {
             version : 'v2-immersion'
         })
     }, [])
