@@ -10,6 +10,7 @@ interface HomePageEventPayload {
     currency ? : string,
     lang ? : string,
     version ? : string,
+    via ? : string
 }
 
 export function trackHomePageEvent(event : HomePageEvent, payload ? : HomePageEventPayload) {

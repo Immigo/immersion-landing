@@ -16,6 +16,8 @@ export const JourneyButton = (props : {
         <img onClick={() => {
             trackJourneyPageEvent('V2: Clicked a journey', {
                 picOrCard : 'pic',
+                via : window.localStorage.getItem('via') ?? undefined,
+                group  : window.localStorage.getItem('test_group') ?? undefined,
                 version : 'v2-immersion'
             });
             window.open(redirectUrl)
@@ -24,6 +26,8 @@ export const JourneyButton = (props : {
             onClick={() => {
                 trackJourneyPageEvent('V2: Clicked a journey', {
                     picOrCard : 'card',
+                    via : window.localStorage.getItem('via') ?? undefined,
+                    group  : window.localStorage.getItem('test_group') ?? undefined,
                     version : 'v2-immersion'
                 });
                 window.open(redirectUrl)

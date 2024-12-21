@@ -17,7 +17,11 @@ export const HeroButtons = (props : {
           text={mainButtonText}
           onClick={() => {
             window.open(`${localeActive}/journey`)
-            trackHomePageEvent('V2: Clicked start button on the jumbotron');
+            trackHomePageEvent('V2: Clicked start button on the jumbotron', {
+                via : window.localStorage.getItem('via') ?? undefined,
+                group  : window.localStorage.getItem('test_group') ?? undefined,
+                version : 'v2-immersion'
+            });
           }
         } />
         </div>

@@ -6,6 +6,7 @@ type JourneyPageEvent =
 
 
 interface JourneyPageEventPayload {
+    via ? : string,
     group ? : string,
     currency ? : string,
     lang ? : string,
