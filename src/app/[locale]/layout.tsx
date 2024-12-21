@@ -20,9 +20,6 @@ const pressStart2 = Press_Start_2P({
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: {
-    locale: string;
-  }
 }
 
 export const metadata: Metadata = {
@@ -32,7 +29,6 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  params: { locale },
 }: Readonly<
   RootLayoutProps
 >) {
