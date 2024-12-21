@@ -57,7 +57,7 @@ function FeatureSection() {
         </Heading>
         <img 
         className="mt-12 md:mt-16 h-[12rem] sm:h-auto sm:w-[82rem] object-contain rounded-md"
-          src='https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion%2Fcompetitive-bw.png?alt=media&token=ab0de61f-24e0-4291-b3f9-3c6184ec0b99' 
+          src={t('competitiveImg')} 
         />
       </Container>
     </div>
