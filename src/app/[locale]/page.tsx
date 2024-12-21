@@ -10,7 +10,7 @@ import { NavBarSimple } from '@/components/navbar-simple'
 import { Testimonials } from '@/components/testimonials_io'
 import { Heading, Subheading } from '@/components/text'
 import type { Metadata } from 'next'
-import { HomeAnalytics } from '../../components/analytics/homeAnalytics'
+import { HomeAnalytics } from '../../components/analytics/home/homeAnalytics'
 import { useTranslations } from 'next-intl'
 import { ParamSaver } from '@/components/script/param-saver'
 

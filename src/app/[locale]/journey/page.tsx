@@ -3,12 +3,14 @@ import Head from "next/head";
 import { JourneyButton } from "@/components/buttons/journeyButton";
 import { NavBarSimple } from "@/components/navbar-simple";
 import { useTranslations } from "next-intl";
+import { JourneyAnalytics } from "@/components/analytics/journey/journeyAnalytics";
 
 const Home: React.FC = () => {
   const t = useTranslations('Journey');
 
   return (
     <>
+      <JourneyAnalytics />
       <NavBarSimple />
       <Head>
         <title>Immigo: Choose Your Journey</title>

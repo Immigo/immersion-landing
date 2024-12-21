@@ -1,4 +1,4 @@
-import mixpanel from '../../util/mixpanel';
+import mixpanel from '../../../util/mixpanel';
 
 type HomePageEvent = 
 'V2: Main landing page visited' |
