@@ -137,7 +137,7 @@ export default function Home() {
       <HomeAnalytics />
       <NavBarSimple />
       <Hero />
-      <main>
+      <main className='bg-black'>
         <Container className="mt-10">
           <LogoCloud />
         </Container>
