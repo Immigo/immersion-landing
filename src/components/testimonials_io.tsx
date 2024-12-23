@@ -37,7 +37,7 @@ export function Testimonials(props : {
         ])}
       >
         <IframeResizer 
-          license='xxx'
+          license='GPLv3'
           src='https://embed-v2.testimonial.to/carousel/all/immigo?theme=light&autoplay=off&showmore=off&one-row=on&same-height=off&tag=all&arrowColor=9BA9B4&column-scale=0' 
           style={{ width: '100%', height: '100vh' }}
         />
