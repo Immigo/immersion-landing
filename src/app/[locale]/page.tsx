@@ -21,7 +21,7 @@ function Hero() {
   const t = useTranslations('Home');
 
   return (
-    <div className="relative pt-8">      {/* // <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
+    <div className="relative pt-8 bg-black">      {/* // <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
       <Container className="relative">
 
       <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:py-48 flex flex-col justify-center items-center text-center text-white">
@@ -132,7 +132,7 @@ export default function Home() {
   const t = useTranslations('Home');
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden bg-black">
       <ParamSaver />
       <HomeAnalytics />
       <NavBarSimple />
