@@ -2,9 +2,7 @@
 
 import { useEffect } from "react";
 
-export const ParamSaver = (props : {
-
-}) => {
+export const ParamSaver = () => {
 
 
     useEffect(() =>  {

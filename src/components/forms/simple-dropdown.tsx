@@ -6,7 +6,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 export default function SimpleDropDown(props : {
     options : Array<string>,
     selected ? : string,
-    onSelectChange : Function
+    onSelectChange : (v : string) => void
 }) {
   const {options, selected, onSelectChange} = props;
   return (

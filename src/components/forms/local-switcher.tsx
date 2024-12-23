@@ -1,6 +1,6 @@
 'use client'
 
-import { ChangeEvent, useTransition } from "react";
+import { useTransition } from "react";
 import SimpleDropDown from "./simple-dropdown";
 import { useLocale } from "next-intl";
 import { useRouter } from "next/navigation";
@@ -30,6 +30,7 @@ export default function LocalSwitcher() {
         if(pathArray[0] === 'es' || pathArray[0] === 'en') {
             path = pathArray.slice(1).join('/');
         }
+        console.log(isPending)
         startTransition(() => {
             router.replace(`/${locale}/${path}`)
         })

@@ -1,12 +1,12 @@
 'use client'
-/* eslint no-sync-scripts: 0, no-unused-vars: 0 */
+/* eslint no-unused-vars: 0 */
 
 import { clsx } from 'clsx'
 import { useRef } from 'react'
 import { Container } from './container'
 import { Heading, Subheading } from './text'
-import { useTranslations } from 'next-intl'
-import Script from 'next/script'
+import IframeResizer from '@iframe-resizer/react'
+
 
 export function Testimonials(props : {
   subText : string,
@@ -15,6 +15,7 @@ export function Testimonials(props : {
   const scrollRef = useRef<HTMLDivElement | null>(null)
 
   const {subText, mainText} = props;
+
 
   return (
     <div className="overflow-hidden py-32">
@@ -35,11 +36,11 @@ export function Testimonials(props : {
           '[--scroll-padding:max(theme(spacing.6),calc((100vw-theme(maxWidth.2xl))/2))] lg:[--scroll-padding:max(theme(spacing.8),calc((100vw-theme(maxWidth.7xl))/2))]',
         ])}
       >
-      <script type="text/javascript" src="https://testimonial.to/js/iframeResizer.min.js"></script>
-    <iframe id='testimonialto-carousel-immigo-tag-all-light' src="https://embed-v2.testimonial.to/carousel/all/immigo?theme=light&autoplay=off&showmore=off&one-row=on&same-height=off&tag=all&arrowColor=9BA9B4&column-scale=0" scrolling="no" width="100%"></iframe>
-    <Script>{`iFrameResize({log: false, checkOrigin: false}, '#testimonialto-carousel-immigo-tag-all-light');`}</Script>
-
-
+        <IframeResizer 
+          license='xxx'
+          src='https://embed-v2.testimonial.to/carousel/all/immigo?theme=light&autoplay=off&showmore=off&one-row=on&same-height=off&tag=all&arrowColor=9BA9B4&column-scale=0' 
+          style={{ width: '100%', height: '100vh' }}
+        />
         <div className="w-[42rem] shrink-0 sm:w-[54rem]" />
       </div>
     </div>

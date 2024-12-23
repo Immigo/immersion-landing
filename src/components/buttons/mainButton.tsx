@@ -1,9 +1,8 @@
 'use client'
-/* eslint no-unsafe-function-type: 0 */
 
 export const MainButton = (props : {
     text : string,
-    onClick : Function
+    onClick : () => void
 }) => {
     const {text, onClick} = props;
     return (

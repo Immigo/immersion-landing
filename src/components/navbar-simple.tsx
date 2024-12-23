@@ -1,27 +1,23 @@
 'use client'
+import Link from "next/link"
 /* eslint prefer-const: 0 */
 /* eslint no-unused-vars: 0 */
-/* eslint no-explicit-any: 0 */
 
 import LocalSwitcher from "./forms/local-switcher"
 
-const navigation : any[]= []
-
-export const NavBarSimple = (props : {
-
-}) => {
+export const NavBarSimple = () => {
     return (
         <header className="fixed inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <a href="/" className="-m-1.5 p-1.5">
+            <Link href="/" className="-m-1.5 p-1.5">
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
                 src="https://cdn.prod.website-files.com/644c0ecc4a055c564b922d0b/645529068ac0540fd0b83c49_Immigo%20White%20Logo.svg"
                 className="h-8 w-auto"
               />
-            </a>
+            </Link>
           </div>
           <div className="flex lg:hidden">
             {/* <button
@@ -40,11 +36,6 @@ export const NavBarSimple = (props : {
             </a>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <a key={item.name} href={item.href} className="text-sm/6 font-semibold text-white">
-                {item.name}
-              </a>
-            ))}
           </div>
 
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
