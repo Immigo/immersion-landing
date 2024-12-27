@@ -27,22 +27,22 @@ export function LogoCloud({
       />
       <img
         alt="Laravel"
-        src="/images/Endava_d.o.o._logo.png"
+        src="/images/mercado-libre-white.png"
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Tuple"
-        src={'/images/Deloitte.png'}
+        src={'/images/microsoft-white.png'}
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Transistor"
-        src={'/images/PwC-Symbol.png'}
+        src={'/images/nubank-white.png'}
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
       <img
         alt="Statamic"
-        src={'/images/Logo_de_Banamex.png'}
+        src={'/images/rappi-white.png'}
         className="h-9 max-sm:mx-auto sm:h-8 lg:h-12"
       />
     </div>
