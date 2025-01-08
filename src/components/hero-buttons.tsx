@@ -16,7 +16,7 @@ export const HeroButtons = (props : {
           <MainButton 
           text={mainButtonText}
           onClick={() => {
-            window.open(`${localeActive}/journey`)
+            window.location.replace(`${localeActive}/journey`)
             trackHomePageEvent('V2: Clicked start button on the jumbotron', {
                 via : window.localStorage.getItem('via') ?? undefined,
                 group  : window.localStorage.getItem('test_group') ?? undefined,

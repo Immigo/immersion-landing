@@ -6,6 +6,6 @@ export const MainButton = (props : {
 }) => {
     const {text, onClick} = props;
     return (
-        <button onClick={() => onClick()} className="font-mono bg-green-500 px-4 py-2 rounded-lg text-md text-white font-medium hover:bg-green-600">{text}</button>
+        <button onClick={() => onClick()} className="font-mono border-white border px-4 py-2 text-md text-white font-medium hover:bg-white hover:text-black">{text}</button>
     )
 }

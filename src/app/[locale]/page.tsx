@@ -21,14 +21,14 @@ function Hero() {
   const t = useTranslations('Home');
 
   return (
-    <div className="relative pt-8 bg-black">      {/* // <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
+    <div className="relative bg-black">      {/* // <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
       <Container className="relative">
 
       <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:py-48 flex flex-col justify-center items-center text-center text-white">
-      <video webkit-playsinline playsInline autoPlay className='absolute h-full md:w-screen object-cover md:object-center object-left-bottom object-cover ' muted loop src="https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion.mov?alt=media&token=cfa249ac-154e-4d22-9176-87f2a92035dc" />
-      <div className="relative border-4 rounded-xl border-green-500 py-28 md:px-64 px-6">
+      <video style={{filter: 'brightness(40%)'}} webkit-playsinline playsInline autoPlay className='absolute h-full md:w-screen object-cover md:object-center object-left-bottom object-cover ' muted loop src="https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion%2Fimmersion-cities.mov?alt=media&token=a42fb4c7-30b0-4fd1-a50c-cc768e12a18b" />
+      <div className="relative border-4 py-28 md:px-64 px-6">
         <img className='w-64 mx-auto' src='https://cdn.prod.website-files.com/644c0ecc4a055c564b922d0b/645529068ac0540fd0b83c49_Immigo%20White%20Logo.svg' />
-        <div className='md:text-2xl text-5xl mt-12 font-press-start-2p'>
+        <div className='md:text-5xl text-5xl mt-12 font-bold'>
           {t('learnEnglishByLiving')}
         </div>
         <Subheading as='h6' className='mt-12'>

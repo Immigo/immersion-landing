@@ -29,7 +29,7 @@ export const JourneyButton = (props : {
             const testGroupToken = window.localStorage.getItem('test_group');
             const params = `?${(rewardfulVia ? `via=${rewardfulVia}` : '')}${(lang) ? `&lang=${lang}` : ''}${(currency) ? `&currency=${currency}${(testGroupToken) ? `&group=${testGroupToken}` : ''}` : ''}`
             window.open(`${redirectUrl}${params}`);
-        }}  src={imageUrl} className="rounded-lg mb-4 md:w-64 h-48 object-cover border-4 border-purple-500 hover:border-purple-300 cursor-pointer"/>
+        }}  src={imageUrl} className="mb-4 md:w-64 h-48 object-cover border-4 border-white hover:border-gray-400 cursor-pointer"/>
         <div
             onClick={() => {
                 trackJourneyPageEvent('V2: Clicked a journey', {
@@ -45,7 +45,7 @@ export const JourneyButton = (props : {
                 const params = `?${(rewardfulVia ? `via=${rewardfulVia}` : '')}${(lang) ? `&lang=${lang}` : ''}${(currency) ? `&currency=${currency}${(testGroupToken) ? `&group=${testGroupToken}` : ''}` : ''}`
                 window.open(`${redirectUrl}${params}`);
             }} 
-            className="border-4 border-green-500 rounded-md h-48 w-full md:ml-12 text-left p-6 cursor-pointer hover:border-green-300">
+            className="border-4 border-white h-48 w-full md:ml-12 text-left p-6 cursor-pointer hover:border-gray-400">
           <h2 className="text-xl font-bold flex items-center"><ArrowRightIcon className="w-5 h-5 mr-2" />{title}</h2>
           <p className="mt-2">{description}</p>
         </div>
