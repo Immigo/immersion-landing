@@ -25,7 +25,7 @@ function Hero() {
       <Container className="relative">
 
       <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:py-48 flex flex-col justify-center items-center text-center text-white">
-      <video style={{filter: 'brightness(40%)'}} webkit-playsinline playsInline autoPlay className='absolute h-full md:w-screen object-cover md:object-center object-left-bottom object-cover ' muted loop src="https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion%2Fimmersion-cities.mov?alt=media&token=a42fb4c7-30b0-4fd1-a50c-cc768e12a18b" />
+      <video style={{filter: 'brightness(40%)'}} webkit-playsinline='true' playsInline autoPlay className='absolute h-full md:w-screen object-cover md:object-center object-left-bottom object-cover ' muted loop src="https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion%2Fimmersion-cities.mov?alt=media&token=a42fb4c7-30b0-4fd1-a50c-cc768e12a18b" />
       <div className="relative border-4 py-28 md:px-64 px-6">
         <img className='w-64 mx-auto' src='https://cdn.prod.website-files.com/644c0ecc4a055c564b922d0b/645529068ac0540fd0b83c49_Immigo%20White%20Logo.svg' />
         <div className='md:text-5xl text-5xl mt-12 font-bold'>
@@ -98,7 +98,7 @@ function BentoSection() {
           title={t('firstPartSession')}
           description={t('first15Minutes')}
           graphic={
-            <video className='absolute h-80 md:left-14 left-4' webkit-playsinline playsInline muted loop autoPlay src='https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce6130d_In-class-transcode.mp4'  />
+            <video className='absolute h-80 md:left-14 left-4' webkit-playsinline='true' playsInline muted loop autoPlay src='https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce6130d_In-class-transcode.mp4'  />
           }
           fade={['bottom']}
           className="lg:col-span-2 lg:rounded-bl-4xl"
@@ -108,7 +108,7 @@ function BentoSection() {
           title={t('secondPartSession')}
           description={t('theRest35Minutes')}
           graphic={
-            <video className='absolute h-80 ' webkit-playsinline playsInline muted loop autoPlay src='https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/673564a0667e1e064f33bedb_webdemo-chat-transcode.mp4'  />
+            <video className='absolute h-80 ' webkit-playsinline='true' playsInline muted loop autoPlay src='https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/673564a0667e1e064f33bedb_webdemo-chat-transcode.mp4'  />
           }
           fade={['bottom']}
           className="lg:col-span-2"
@@ -118,7 +118,7 @@ function BentoSection() {
           title={t('checkYourFeedback')}
           description={t('afterTheSession')}
           graphic={
-            <video className='absolute h-80 left-16' webkit-playsinline playsInline muted loop autoPlay src='https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce6130c_Post-class_vF-transcode.mp4'  />
+            <video className='absolute h-80 left-16' webkit-playsinline='true' playsInline muted loop autoPlay src='https://cdn.prod.website-files.com/6734f0a13fc430c77ce611cc/6734f0a13fc430c77ce6130c_Post-class_vF-transcode.mp4'  />
           }
           fade={['bottom']}
           className="max-lg:rounded-b-4xl lg:col-span-2 lg:rounded-br-4xl"

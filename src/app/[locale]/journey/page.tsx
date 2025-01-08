@@ -24,7 +24,7 @@ const Home: React.FC = () => {
             <div className="relative text-white md:text-6xl text-3xl h-full flex md:px-24 md:text-left md:col-span-1 col-span-3 col-span-3 row-span-1 flex justify-center items-center flex-col">
               <span className="z-10">{t('chooseYourJourney')}</span>
               <video 
-                style={{filter: 'brightness(40%)'}} webkit-playsinline playsInline autoPlay 
+                style={{filter: 'brightness(40%)'}} webkit-playsinline='true' playsInline autoPlay 
                 className='absolute w-full object-none min-w-full min-h-full max-w-none' muted loop src="https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion%2Fimmersion-cities.mov?alt=media&token=a42fb4c7-30b0-4fd1-a50c-cc768e12a18b" />
             </div>
             <div className="grid grid-cols-1 gap-8 md:mt-12 mt-6 md:col-span-2 col-span-3 row-span-5">
