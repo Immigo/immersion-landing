@@ -11,7 +11,7 @@ import type { Metadata } from 'next'
 import { HomeAnalytics } from '../../components/analytics/home/homeAnalytics'
 import { useTranslations } from 'next-intl'
 import { ParamSaver } from '@/components/script/param-saver'
-import { AvatarGroup } from '@/components/buttons/avatar-group'
+import { AvatarGroup } from '@/components/avatar/avatar-group'
 
 export const metadata: Metadata = {
   description:

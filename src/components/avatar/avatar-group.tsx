@@ -1,8 +1,6 @@
+'use client'
 
-
-export const AvatarGroup = (props : {
-
-}) => {
+export const AvatarGroup = () => {
     return (
         <div className="isolate flex justify-center -space-x-2">
             <img
