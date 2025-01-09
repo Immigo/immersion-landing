@@ -37,7 +37,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <script type="text/javascript" src="//script.crazyegg.com/pages/scripts/0119/0356.js" async={true} ></script>
-        <script id="respondio__growth_tool" src="https://cdn.respond.io/widget/widget.js?wId=f5c92e16-863d-41f9-9069-9b01c6bd64cd"></script>
+        <script id="respondio__growth_tool" async={true} src="https://cdn.respond.io/widget/widget.js?wId=f5c92e16-863d-41f9-9069-9b01c6bd64cd"></script>
 
       </head>
       <body
