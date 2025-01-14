@@ -12,6 +12,7 @@ import { HomeAnalytics } from '../../components/analytics/home/homeAnalytics'
 import { useTranslations } from 'next-intl'
 import { ParamSaver } from '@/components/script/param-saver'
 import { AvatarGroup } from '@/components/avatar/avatar-group'
+import { SessionContainer } from '@/components/container/sessionContainer'
 
 export const metadata: Metadata = {
   description:
@@ -27,13 +28,13 @@ function Hero() {
       <div className="pb-24 pt-16 sm:pb-32 sm:pt-24 md:py-24 flex flex-col justify-center items-center text-center text-white">
       <video style={{filter: 'brightness(40%)'}} webkit-playsinline='true' playsInline autoPlay className='absolute h-full md:w-screen object-cover md:object-center object-left-bottom object-cover ' muted loop src="https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/website_photos%2Fimmersion%2Fimmersion-cities.mov?alt=media&token=a42fb4c7-30b0-4fd1-a50c-cc768e12a18b" />
       <div className="relative py-14 md:px-64 px-6">
-        <img className='md:w-44 w-40 mx-auto mb-12' src='/images/NumberOnePlatform.png' />
         <div className='md:text-5xl text-4xl mt-12 font-bold'>
           {t('learnEnglishByLiving')}
         </div>
         <Subheading as='h6' className='mt-12'>
           {t('startYourJourney')}
         </Subheading>
+        
         <div className="flex space-x-4 justify-center mt-12">
           <HeroButtons mainButtonText={t('start')} />
         </div>
@@ -43,6 +44,7 @@ function Hero() {
         <div className='mt-6'>
           <AvatarGroup />
         </div>
+        <SessionContainer />
       </div>
 
       </div>
@@ -148,6 +150,8 @@ export default function Home() {
         <Container className="mt-10">
           <LogoCloud />
         </Container>
+        <img className='md:w-44 w-40 mx-auto mt-24' src='/images/NumberOnePlatform.png' />
+
         <div className="bg-gradient-to-b from-black from-50% to-black py-32">
           <FeatureSection />
           <BentoSection />
