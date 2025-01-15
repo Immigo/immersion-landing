@@ -2,6 +2,8 @@
 
 import moment from "moment";
 import { useEffect, useState } from "react";
+import { trackHomePageEvent } from "../analytics/home/analytics";
+import { useLocale } from "next-intl";
 
 const sessions = [
     {
@@ -53,6 +55,7 @@ export const SessionContainer = () => {
     const [untilNextSession, setUntilNextSession] = useState(new Date().valueOf());
     const [currentSession, setCurrentSession] = useState(sessions[Math.round(moment().hours() % 7)]);
 
+    const localeActive = useLocale();
 
     useEffect(() => {
         function pollDom() {
@@ -96,7 +99,23 @@ export const SessionContainer = () => {
                     <div className="font-semibold">Until the next session</div>
                     <div className="text-2xl text-blue-400 font-bold">{`0h ${59 - moment(untilNextSession).minutes()}m ${59 - moment(untilNextSession).seconds()}s`}</div>
                 </div>
-                <div className="border hover:bg-white hover:text-black cursor-pointer text-center md:text-2xl text-md md:p-4 p-2 flex items-center">
+                <div 
+                    className="border hover:bg-white hover:text-black cursor-pointer text-center md:text-2xl text-md md:p-4 p-2 flex items-center"
+                    onClick={() => {
+                        trackHomePageEvent('V2: Clicked try it for free on session container', {
+                            title : currentSession.title,
+                            objective : currentSession.objective,
+                            ledBy : currentSession.ledByName,
+                            untilNext : 59 - moment(untilNextSession).minutes()
+                        });
+                        const rewardfulVia = window.localStorage.getItem('via');
+                        const lang = localeActive;
+                        let currency;
+                        const testGroupToken = window.localStorage.getItem('test_group');
+                        const params = `?${(rewardfulVia ? `via=${rewardfulVia}` : '')}${(lang) ? `&lang=${lang}` : ''}${(currency) ? `&currency=${currency}${(testGroupToken) ? `&group=${testGroupToken}` : ''}` : ''}`
+                        window.open(`https://app.immigo.io/pricing${params}`);
+                    }}
+                >
                     Try it for free
                 </div>
             </div>
