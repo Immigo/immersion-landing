@@ -3,11 +3,18 @@
 import moment from "moment";
 import { useEffect, useState } from "react";
 import { trackHomePageEvent } from "../analytics/home/analytics";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 
+
+interface SessionObject {
+    title : string,
+    objective : string,
+    ledByImg : string,
+    ledByName : string
+}
 
 export const SessionContainer = (props : {
-    sessions : any[],
+    sessions : SessionObject[],
     joinNextSession : string,
     objective : string,
     untilTheNextSession : string,
