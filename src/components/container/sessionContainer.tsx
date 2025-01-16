@@ -3,54 +3,20 @@
 import moment from "moment";
 import { useEffect, useState } from "react";
 import { trackHomePageEvent } from "../analytics/home/analytics";
-import { useLocale } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
-const sessions = [
-    {
-        title : 'Applying for a Job in San Francisco',
-        objective : 'Learn how to effectively apply for a job in San Francisco by crafting a tailored resume, writing a compelling cover letter, and navigating local hiring practices',
-        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2FAGzmCyvq9qay5V40EykRJ9f9LTp1_profile_picture?alt=media&token=98a3ac1b-0dba-4cfd-ab75-db7073d124ab',
-        ledByName : 'Andrea from San Francisco 🇺🇸'
-    },
-    {
-        title : 'Going on a Date in Los Angeles',
-        objective : 'Prepare for a successful date in Los Angeles by learning conversational tips, cultural nuances, and etiquette to make a great impression.',
-        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2F6gBeRoW9jDVMGIQpr4UOjSwtFc52_profile_picture?alt=media&token=56e6901e-4992-44ee-8dd7-dfbb126fb4b4',
-        ledByName : 'Meg from Los Angeles 🇺🇸'
-    },
-    {
-        title : 'Ordering in a Coffee Shop in New York',
-        objective : 'Gain confidence in ordering at a coffee shop in New York by practicing common phrases, menu vocabulary, and polite interactions.',
-        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2FoBFXnnz4o4VOI3g7ywmzereys5g1_profile_picture?alt=media&token=dad7446e-f7b3-4d9b-8587-f9ea50be5b70',
-        ledByName : 'Matthew from Miami 🇺🇸'
-    },
-    {
-        title : 'Introducing Yourself to New Colleagues in Chicago',
-        objective : 'Build confidence in introducing yourself to new colleagues in Chicago by practicing professional greetings, small talk, and workplace etiquette.',
-        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2FAGzmCyvq9qay5V40EykRJ9f9LTp1_profile_picture?alt=media&token=98a3ac1b-0dba-4cfd-ab75-db7073d124ab',
-        ledByName : 'Andrea from San Francisco 🇺🇸'
-    },
-    {
-        title : 'Attending a Party in Miami',
-        objective : 'Feel confident attending a party in Miami by learning conversational icebreakers, cultural norms, and tips for engaging in social interactions.',
-        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2F6gBeRoW9jDVMGIQpr4UOjSwtFc52_profile_picture?alt=media&token=56e6901e-4992-44ee-8dd7-dfbb126fb4b4',
-        ledByName : 'Meg from Los Angeles 🇺🇸'
-    },
-    {
-        title : 'Attending a Networking Event in Seattle',
-        objective : 'Master the skills to confidently attend a networking event in Seattle by learning how to introduce yourself, engage in meaningful conversations, and make lasting professional connections.',
-        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2FoBFXnnz4o4VOI3g7ywmzereys5g1_profile_picture?alt=media&token=dad7446e-f7b3-4d9b-8587-f9ea50be5b70',
-        ledByName : 'Matthew from Miami 🇺🇸'
-    },
-    {
-        title : 'Conversing with Your Neighbors in Orange County',
-        objective : 'Develop confidence in conversing with your neighbors in Orange County by practicing friendly greetings, small talk, and community-focused topics.',
-        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2F6gBeRoW9jDVMGIQpr4UOjSwtFc52_profile_picture?alt=media&token=56e6901e-4992-44ee-8dd7-dfbb126fb4b4',
-        ledByName : 'Meg from Los Angeles 🇺🇸'
-    }
-]
 
-export const SessionContainer = () => {
+export const SessionContainer = (props : {
+    sessions : any[],
+    joinNextSession : string,
+    objective : string,
+    untilTheNextSession : string,
+    nextImmersion : string,
+    ledBy : string,
+    tryItForFree : string
+}) => {
+
+    const {sessions, joinNextSession, objective, nextImmersion, ledBy, tryItForFree, untilTheNextSession} = props;
 
     const [untilNextSession, setUntilNextSession] = useState(new Date().valueOf());
     const [currentSession, setCurrentSession] = useState(sessions[Math.round(moment().hours() % 7)]);
@@ -71,13 +37,13 @@ export const SessionContainer = () => {
     return (
         <div className="border border-white text-left p-6">
             <div className="font-bold text-2xl">
-                Join next session!
+                {joinNextSession}
             </div>
             <div>
-                <span className="text-blue-300 font-semibold">Next immersion:</span> {currentSession.title}
+                <span className="text-blue-300 font-semibold">{objective}:</span> {currentSession.title}
             </div>
             <div>
-                <span className="text-blue-300 font-semibold">Objective:</span> {currentSession.objective}
+                <span className="text-blue-300 font-semibold">{nextImmersion}:</span> {currentSession.objective}
             </div>
             <div className="flex items-center mt-4">
                 <img
@@ -87,7 +53,7 @@ export const SessionContainer = () => {
                 />
                 <div className="ml-4">
                     <div className="font-semibold text-gray-300">
-                        Led by
+                        {ledBy}
                     </div>
                     <div className="font-bold">
                         {currentSession.ledByName}
@@ -96,7 +62,7 @@ export const SessionContainer = () => {
             </div>
             <div className="flex justify-between mt-8">
                 <div>
-                    <div className="font-semibold">Until the next session</div>
+                    <div className="font-semibold">{untilTheNextSession}</div>
                     <div className="text-2xl text-blue-400 font-bold">{`0h ${59 - moment(untilNextSession).minutes()}m ${59 - moment(untilNextSession).seconds()}s`}</div>
                 </div>
                 <div 
@@ -116,7 +82,7 @@ export const SessionContainer = () => {
                         window.open(`https://app.immigo.io/pricing${params}`);
                     }}
                 >
-                    Try it for free
+                    {tryItForFree}
                 </div>
             </div>
         </div>

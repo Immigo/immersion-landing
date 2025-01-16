@@ -21,6 +21,52 @@ export const metadata: Metadata = {
 
 function Hero() {
   const t = useTranslations('Home');
+  const ts = useTranslations('Session');
+
+  const sessions = [
+    {
+        title : ts('applyJobSF'),
+        objective : ts('sfObj'),
+        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2FAGzmCyvq9qay5V40EykRJ9f9LTp1_profile_picture?alt=media&token=98a3ac1b-0dba-4cfd-ab75-db7073d124ab',
+        ledByName : ts('andrea')
+    },
+    {
+        title : ts('goingOnDateLA'),
+        objective : ts('laObj'),
+        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2F6gBeRoW9jDVMGIQpr4UOjSwtFc52_profile_picture?alt=media&token=56e6901e-4992-44ee-8dd7-dfbb126fb4b4',
+        ledByName : ts('meg')
+    },
+    {
+        title : ts('orderingCoffeeNYC'),
+        objective : ts('nycObj'),
+        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2FoBFXnnz4o4VOI3g7ywmzereys5g1_profile_picture?alt=media&token=dad7446e-f7b3-4d9b-8587-f9ea50be5b70',
+        ledByName : ts('matthew')
+    },
+    {
+        title : ts('introColChicago'),
+        objective : ts('chiObj'),
+        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2FAGzmCyvq9qay5V40EykRJ9f9LTp1_profile_picture?alt=media&token=98a3ac1b-0dba-4cfd-ab75-db7073d124ab',
+        ledByName : ts('andrea')
+    },
+    {
+        title : ts('attendingPartyMiami'),
+        objective : ts('miamiObj'),
+        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2F6gBeRoW9jDVMGIQpr4UOjSwtFc52_profile_picture?alt=media&token=56e6901e-4992-44ee-8dd7-dfbb126fb4b4',
+        ledByName : ts('meg')
+    },
+    {
+        title : ts('networkingSeattle'),
+        objective : ts('stObj'),
+        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2FoBFXnnz4o4VOI3g7ywmzereys5g1_profile_picture?alt=media&token=dad7446e-f7b3-4d9b-8587-f9ea50be5b70',
+        ledByName : ts('matthew')
+    },
+    {
+        title : ts('conversingOC'),
+        objective : ts('ocObj'),
+        ledByImg : 'https://firebasestorage.googleapis.com/v0/b/immigo-application-8ba25.appspot.com/o/profile_pictures%2F6gBeRoW9jDVMGIQpr4UOjSwtFc52_profile_picture?alt=media&token=56e6901e-4992-44ee-8dd7-dfbb126fb4b4',
+        ledByName : ts('meg')
+    }
+  ]
 
   return (
     <div className="relative bg-black">      {/* // <Gradient className="absolute inset-2 bottom-0 rounded-4xl ring-1 ring-inset ring-black/5" /> */}
@@ -44,7 +90,17 @@ function Hero() {
         <div className='mt-6'>
           <AvatarGroup />
         </div>
-        <SessionContainer />
+        <div className='md:mt-24 mt-12'>
+          <SessionContainer 
+            sessions={sessions}
+            joinNextSession={ts('joinNextSession')}
+            untilTheNextSession={ts('untilTheNextSession')}
+            objective={ts('objective')}
+            nextImmersion={ts('nextImmersion')}
+            ledBy={ts('ledBy')}
+            tryItForFree={ts('tryItForFree')}
+          />
+        </div>
       </div>
 
       </div>

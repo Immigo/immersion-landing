@@ -31,5 +31,36 @@
         "lookForAJob" : "Busca un trabajo en San Francisco.",
         "goOnADate" :  "Salir a una cita en Los Ángeles.",
         "orderACoffee" : "Ordenar un café en New York."
+    },
+
+    "Session" : {
+        "joinNextSession" : "¡Únete a la próxima sesión!",
+        "nextImmersion" : "Próxima inmersión",
+        "objective" : "Objetivo",
+        "ledBy" : "Liderado por",
+        "untilTheNextSession" : "Hasta la próxima sesión",
+        "tryItForFree" : "Puebalo gratis",
+
+        "andrea" : "Andrea de San Francisco 🇺🇸",
+        "meg" : "Meg de Los Angeles 🇺🇸",
+        "matthew" : "Matthew de Miami 🇺🇸",
+
+
+        "applyJobSF" : "Busca un trabajo en San Francisco.",
+        "goingOnDateLA" : " Ir a una cita en Los Ángeles",
+        "orderingCoffeeNYC" : "Ordenando en una tienda de café en New York",
+        "introColChicago" : "Presentándote con un nuevo compañero de trabajo en Chicago",
+        "attendingPartyMiami" : "Asistiendo a una fiesta en Miami",
+        "networkingSeattle" : "Asistiendo a un evento de networking en Seattle",
+        "conversingOC" : "Conversando con tu vecino en Orange County",
+
+        "sfObj" : "Aprende a cómo postularte de manera efectiva para un trabajo en San Francisco creando un currículum personalizado, escribiendo una carta de presentación convincente y explorando las prácticas de contratación locales.",
+        "laObj" : "Prepárate para una cita exitosa en Los Ángeles, aprendiendo consejos de conversación, matices culturales y etiqueta para que causes una gran impresión.",
+        "nycObj" : "Gana confianza ordenando en un café de New York, practicando frases comunes, vocabulario de menú e interacciones con educación.",
+        "chiObj" : "Construye confianza presentándote con un nuevo compañero de trabajo en Chicago, practicando saludos profesionales, charlas cortas y etiqueta para ambiente de trabajo.",
+        "stObj" : "Domina las habilidades para asistir con confianza a un evento de networking en Seattle, aprendiendo cómo introducirte, cómo conectar en una conversación y hacer relaciones profesionales que perduren.",
+        "miamiObj" : "Siéntete en confianza asistiendo a una fiesta en Miami, aprendiendo conversaciones para romper el hielo, normas culturales y consejos para socializar.",
+        "ocObj" : "Desarrolla confianza conversando con tu vecino en Orange County, practicando saludos amigables, charlas cortas y temas relacionados a la comunidad."
+
     }
 }
